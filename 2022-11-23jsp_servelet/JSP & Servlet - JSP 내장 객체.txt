@@ -1,0 +1,45 @@
+
+
+JSP & Servlet - JSP requiest, response
+
+Servlet 클래스가 아닌 JSP 파일로 만드는 방법
+
+jsp 파일이 결국 자바 파일로 변환되기 때문에 사용 방법이 거의 같다
+
+get 요청 시 한글깨짐 처리를 해줘야 한다
+
+request.setCharacterEncoding("UTF-8")설정을 해주어야 한다.
+
+
+response.sedRedirect에 대해 알아보자 
+
+
+
+
+JSP 내장 객체 --------------
+
+JSP파일에서 별도로 import 하지 않아도 사용할 수 있는객체들을 내장 객체라고 한다
+: jsp 파일
+
+config  객체
+application 객체
+out 객체
+exception 객체
+
+
+config 내장객체 >
+	현재 JSP 페이지에 대한 서블릿 설정 정보들을 저장하고 사용할 수 있다.
+	JSP 파일에 존재하는 ServletConfig 객체이다.
+	
+application 내장객체 >
+
+javax.servlet.ServletContext
+	주로 전체 서블릿 파일에서 공유할 필요가 있는 값 들을 설정한다. 
+	예를 들자면 실제 사용하는 서버 주소를 설정 하거나 개발 시에 사용하는 테스트 서버주소 같은 부분들을 저장할 수 있다.
+
+초기 파라미터 설정 시 내장 객체 config와 application의 차이점:
+	초기 파라미터는 결국 하나의 서블릿 파일에서만 사용할 수 있게 선언하고 
+	application은 모든 서블릿 파일에서 사용할 수 있도록 설정이 가능하다
+
+
+Out = response.writer();

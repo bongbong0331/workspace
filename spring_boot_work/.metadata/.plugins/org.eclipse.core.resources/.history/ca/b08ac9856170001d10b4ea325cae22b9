@@ -1,0 +1,10 @@
+package com.example.demo1.dto;
+
+public class UserDTO {
+
+	
+	private String name;
+	private int age;
+	
+	
+}

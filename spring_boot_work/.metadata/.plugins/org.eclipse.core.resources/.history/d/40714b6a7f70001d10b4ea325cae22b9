@@ -1,0 +1,13 @@
+package adapter;
+
+public class AirConditioner implements Electronic220v{
+
+	@Override
+	public void connect() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	// 전기 꼽기
+	
+}

@@ -1,0 +1,18 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/myexcontroller")
+public class APIControllerMyEx {
+
+	
+	@GetMapping("/first")
+	public void myExController() {
+		System.out.println("");
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+JSP & Servlet - Connection Pool
+
+DBCP : 
+데이터 베이스와 통신하는 자원을 효율적으로 관리하기 위한 기법
+
+JNDI (Java Naming and Directory Interface) :
+웹 서버 실행 시 톰캣이 만들어 놓은 ConnectionPool 객체에 접근할 때는 JNDI 를 이용 한다.
+즉, 미리 접근할 자원에 키를 지정한 후 애플리케이션이 실행 중일 때 키를 이용해 자원을 접근하여 처리한다. ! 

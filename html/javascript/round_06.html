@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // confirm 함수는 매개변수로 문자열을 가지고, 이녀석 사용자에게 보여줄 메세지 입니다.
+        // 확인을 누르면 true를 반환, 취소를 누르면 false 를 반환함
+         function question(){
+            let ans = confirm("지금 비오나요 ?? ? ?");
+            console.log("ans : " + ans);
+
+            if(ans == true){
+                document.write("우산");
+            }else{
+                document.write("그냥 go");
+            }
+         }
+
+    </script>
+</head>
+<body>
+    
+    <!-- 우산을 들고 나가세요 ~  -->
+    <!-- 그냥 고 ~ -->
+   
+    <br>
+ 
+    <script>
+        // ranData();
+        question();
+    </script>
+</body>
+</html>                                      

@@ -1,0 +1,15 @@
+body{
+    background-color: tomato;
+}
+
+
+p{
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    font-size: 500%;
+    border: 100px dotted blue;
+    padding: 100px;
+    margin: 100px;
+    text-align: center;
+}

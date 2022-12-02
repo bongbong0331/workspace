@@ -1,0 +1,9 @@
+package com.example.demo2.dto.common;
+
+public class CarDTO {
+	
+	private String name;
+	private String carNumber;
+	
+	
+}

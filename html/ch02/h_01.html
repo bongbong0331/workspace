@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        span{
+            background-color: tomato;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .tomato,
+        .hello{
+            display: block;
+            margin-top: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <span>span 태그</span>
+    <span>span 태그</span>
+    <!-- 
+        inline 높이와 너비가 없기 때문에 margin은 좌, 우 에만 적용이 됩니다. 
+        하지만 padding은 상하좌우 다 적용이 된다. 
+
+        inline 요소에 상 하 마진을 적용하고 싶다면 디스플레이 속성을 block 속성으로 변경 해야 한다.!!!
+     -->
+    <span>span 태그</span>
+    <span class="tomato">span 태그</span>
+    <span class="tomato">span 태그</span>
+    <span class="tomato">span 태그</span>
+    <span class="tomato hello tomato">span 태그</span>
+</body>
+</html>

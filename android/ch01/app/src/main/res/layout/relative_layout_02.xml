@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_200"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_above="@id/textView1"
+        android:background="#00F300"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </TextView>
+
+    <TextView
+        android:layout_alignBottom="@id/textView1"
+        android:background="#FFEB3B"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </TextView>
+
+    <TextView
+        android:layout_below="@id/textView1"
+        android:background="#041004"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </TextView>
+
+    <TextView
+        android:layout_below="@id/textView1"
+        android:layout_alignEnd="@id/textView1"
+        android:background="#E91E63"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_toEndOf="@id/textView1"
+        android:layout_above="@id/textView1"
+        android:background="#FF5722"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </TextView>
+
+
+
+</RelativeLayout>

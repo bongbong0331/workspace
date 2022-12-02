@@ -1,0 +1,9 @@
+package adapter;
+
+public class MyHouse {
+
+	public static void main(String[] args) {
+		// 청소기
+		// 드라이기
+	}
+}

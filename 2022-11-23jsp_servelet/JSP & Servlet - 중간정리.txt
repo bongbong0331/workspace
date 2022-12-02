@@ -1,0 +1,44 @@
+JSP & Servlet - 중간정리
+
+jsp 파일 변환 과정 , 서블릿 파일 변환 과정 ( WAS 처리 )
+
+Servlet mapping
+1. web.xml  파일 이용
+2. Java Annotation 이용
+중복가능
+ 
+( 인터페이스 ) : Servlet  , ServletConfig , Serializable
+( 추상클래스 ) : GenericServlet
+( 추상클래스 ) : HttpServlet 상속 ( MyServlet )
+
+HttpServletRequest => 요청에 대한 정보를 가지고 있는 객체
+HttpServletResponse => 응답에 대한 정보를 가지고 있는 객체
+Servlet Life cycle : @PostConstruct => init => service => destroy => @PreDestroy
+
+
+form 태그 method => get, post 방식 둘 다 사용 가능 하다.  <= aplication/x-www-form-urlencoded
+request.getParameter("XXX"); <= 하나의 값을 받을 때 사용하는 메서드
+request.getParameterValues <= 여러개의 값을 받을 때 사용
+
+
+JSP 내장 객체
+config 객체 - 현재 JSP 페이지에 대한 서블릿 설정 정보등을 저장하고 사용할 수 있는 객체
+application 객체 - 웹 서버 내 동일한 애플리케이션 처리 정보를 저장 <context-param>
+out 객체 - 응답 시 출력 버퍼 ( 문자열로 전송 처리 가능 )
+exception 객체 - 
+
+Servlet 에서 데이터 공유
+getAttribute & setAttribute 
+
+
+쿠키
+Connectionless : 하나의 요청에 하나의 응답을 한 후 연결을 종료 하는 것을 의미 합니다.
+Stateless : 통신이 끝난 후 상태 정보를 저장하지 않는 것을 의미 합니다. 
+	이전 연결에서 사용한 데이터를 다른 연결 요청에서 요구할 수 없습니다. ( 7일간 보지 않기 )
+
+세션 
+쿠키 와 같이 사용 됨 JSSESIONID 
+서버에 담긴다 
+
+
+

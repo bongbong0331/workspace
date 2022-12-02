@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            자식요소에서 사용하는 단축 속성
+            flex: [증가 너비] [감소 너비] [기본 너비]
+            flex: [grow] [shrink] [basis]
+
+            flex 단축속성에 flex-grow를 제외하고 모두 생략 가능합니다 !!!
+            .child { 예제 
+                flex: 1(증가) 1(감소) 50px(기본);
+                flex: 1(증가) 1(감소); 
+                flex: 1(증가) 50px(기본);
+            }
+        */
+        .parent{
+            border: 5px solid gold;
+            display: flex;
+        }
+        .parent div{
+            margin: 5px;
+            height: 200px;
+            width: 200px;
+            color: #fff;
+            text-align: center;
+        }
+        .child1{
+            background-color: red;
+            flex: 1;
+        }
+        .child2{
+            background-color: black;
+            flex: 9999999999999;
+        }
+        .child3{
+            background-color: wheat;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+</html>

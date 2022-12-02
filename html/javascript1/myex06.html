@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        속성 값 변경
+        document.getElementById(id).attribute = new value
+    -->
+
+    <img id="img1" src="../rooster.jpg" alt="" width="150px" height="150px">
+    <img id="img2" src="../duck.jpg" alt="" width="150px" height="150px">
+
+    <button id="btn-img1">이미지 변경1</button>
+    <button id="btn-img2">이미지 변경2</button>
+
+    <script>
+        document.getElementById("btn-img1").onclick = function(){
+            document.getElementById("img1").src = "../duck.jpg"
+            document.getElementById("img2").src = "../rooster.jpg"
+            console.log("이거눌러졋냐??");
+        };
+
+        document.getElementById("btn-img2").onclick = function(){
+            document.getElementById("img2").src = "../rooster.jpg"
+            console.log("이거눌러졋냐??");
+        };
+
+
+    </script>
+</body>
+</html>

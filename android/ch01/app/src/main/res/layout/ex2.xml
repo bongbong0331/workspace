@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        
+        android:id="@+id/topPanel"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/image"
+            android:src="@drawable/you"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+        
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="90dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:text="youtube"
+            android:layout_width="200dp"
+            android:layout_height="60dp"/>
+    </FrameLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="740dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/white">
+
+    </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/images"
+            app:civ_border_color="#FF9800"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+        
+
+
+
+</FrameLayout>
